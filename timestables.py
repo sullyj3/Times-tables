@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import random
 import sys
 #menus
@@ -21,7 +23,7 @@ def mainmenu(): #potentially later justify explanations right somehow
 	print()
 	selection=input("> ")
 	if selection=="0":	#exit selected
-		quit()
+		sys.exit()
 	else:			#other option selected
 		print()
 		print("You can return to the main menu at any time by typing 'menu'")
@@ -43,7 +45,7 @@ def mainmenu(): #potentially later justify explanations right somehow
 
 #1
 def one_to_twelve():  #1-12 times tables
-	while 1==1:
+	while True:
 		op1=random.randrange(1,12)
 		op2=random.randrange(1,12)
 		product=op1*op2
@@ -57,7 +59,7 @@ def one_to_twelve():  #1-12 times tables
 
 #2
 def one_to_twenty():  #1-20 times tables
-	while 1==1:
+	while True:
 		op1=random.randrange(1,21)
 		op2=random.randrange(1,21)
 		product=op1*op2
@@ -71,7 +73,7 @@ def one_to_twenty():  #1-20 times tables
 
 #3
 def first_twelve_second_twenty():
-	while 1==1:
+	while True:
 		op1=random.randrange(1,12)
 		op2=random.randrange(13,21)
 		product=op1*op2
@@ -85,7 +87,7 @@ def first_twelve_second_twenty():
 
 #4
 def thirteen_to_twenty():
-	while 1==1:
+	while True:
 		op1=random.randrange(13,21)
 		op2=random.randrange(13,21)
 		product=op1*op2
@@ -113,5 +115,5 @@ def print_table(table):
 	pass
 '''
 
-while 1==1: #goes back to main menu when other functions exit
+while True: #goes back to main menu when other functions exit
 	mainmenu()
